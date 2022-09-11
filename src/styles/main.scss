@@ -1,6 +1,54 @@
 @import './fonts.scss';
+@import '~scss-reset/_reset.scss';
+@import "./vars.scss";
+@import "./mixins&patterns.scss";
 
-body {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
+@import 'header.scss';
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
+
+.content {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex: 0 0 auto;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+html.scroll-active {
+  body {
+    position: fixed;
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+  }
+}
+
+html.scroll-active{
+  position: relative;
+  overflow: hidden;
+
+  body {
+    position: relative;
+    overflow: hidden;
+  }
+}
+
+html.scroll-active {
+  body {
+    position: fixed;
+    overflow: hidden;
+  }
+}
+
+
+@import './media-q/header-media.scss';

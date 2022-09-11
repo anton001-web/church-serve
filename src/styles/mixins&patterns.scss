@@ -1,0 +1,39 @@
+@mixin fontz($ff, $fw, $fs, $fst) {
+  font-family: $ff;
+  font-weight: $fw;
+  font-size: $fs;
+  font-style: $fst;
+}
+
+%section-subTitle {
+  color: $black;
+  @include fontz('Roboto-Condensed', 400, 16px, normal);
+}
+
+%section-title {
+  color: $black;
+  @include fontz('Roboto-Condensed', 700, 48px, normal);
+}
+
+%text-default {
+  @include fontz('Roboto-Condensed', 400, 16px, normal);
+}
+
+%default-btn {
+  @include fontz('Roboto-Condensed', 400, 16px, normal);
+  background: $primary;
+  color: $black;
+  border-radius: 12px;
+  padding: 18px 40px;
+  text-transform: uppercase;
+}
+
+%secondary-btn {
+  @include fontz('Roboto-Condensed', 400, 16px, normal);
+  text-transform: uppercase;
+  background: $black;
+  padding: 18px 40px;
+  backdrop-filter: blur(80px);
+  border-radius: 12px;
+  color: $primary;
+}
