@@ -6,6 +6,7 @@
 @import 'header.scss';
 @import 'section1.scss';
 @import 'section2.scss';
+@import 'section3.scss';
 
 #root {
   display: flex;
@@ -59,3 +60,4 @@ body {
 @import './media-q/header-media.scss';
 @import './media-q/section1-media.scss';
 @import './media-q/section2-media.scss';
+@import './media-q/section3-media.scss';

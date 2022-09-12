@@ -1,0 +1,31 @@
+@media screen and (min-width: 767px) {
+  .pray-section__btn {
+    position: relative;
+    left: 50%;
+    top: 20px;
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .pray-section__photoalbum-list {
+    grid-template-columns: 1fr;
+
+    img {
+      height: 500px !important;
+    }
+  }
+
+  .pray-section__btn {
+    grid-row: 2;
+    justify-self: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .pray-section__photoalbum-list {
+    img {
+      height: 300px !important;
+    }
+  }
+}
