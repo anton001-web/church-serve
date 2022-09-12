@@ -1,0 +1,23 @@
+@media screen and (max-width: 996px) {
+  .benefit-item__title {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+
+  .benefit-item__text {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .benefits-list {
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+  }
+
+  .benefits-list__item {
+    align-self: center;
+    max-width: 300px;
+  }
+}

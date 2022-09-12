@@ -1,0 +1,55 @@
+.benefits-section {
+  margin-top: $section-margin;
+}
+
+.benefits-body {
+  padding: $padding-default;
+}
+
+.benefits-subTitle {
+  @extend %section-subTitle;
+}
+
+.benefits-title {
+  @extend %section-title;
+}
+
+.benefits-list__block {
+  margin-top: 70px;
+}
+
+.benefits-list {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  gap: 20px;
+}
+
+.benefits-list__item {
+  position: relative;
+}
+
+.benefits-item__img {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.benefits-item__text-block {
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+}
+
+.benefit-item__title {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  @include fontz('Roboto-Condensed', 700, 24px, normal);
+}
+
+.benefit-item__text {
+  @extend %text-default;
+}

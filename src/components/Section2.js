@@ -25,7 +25,7 @@ const Section2 = () => {
             <div className="container">
                 <div className="mini-advt__body">
                     <span className='mini-advt__subTitle'>sub-headline</span>
-                    <h1 className='mini-advt__title'>a church that's relevant</h1>
+                    <h1 className='mini-advt__title title'>a church that's relevant</h1>
                     <div className='mini-advt__list-block'>
                         <div className='mini-advt__list'>
                             {
