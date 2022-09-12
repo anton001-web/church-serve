@@ -1,0 +1,56 @@
+.main-section__body {
+  padding: $padding-default;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  min-height: 80vh;
+}
+
+.main-section {
+  background-image: url('../assets/images/main-wel.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @media screen and (max-width: 996px) {
+    background-image: url('../assets/images/main-wel__tablet.png');
+  }
+
+  @media screen and (max-width: 767px) {
+    background-image: url('../assets/images/main-wel__mobile.png');
+  }
+}
+
+.main-section__subTitle {
+  @include fontz('Roboto-Condensed', 700, 16px, normal);
+  color: #fff;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.main-section__title {
+  @include fontz('Roboto-Condensed', 700, 64px, normal);
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.main-section__btn {
+  margin-top: 40px;
+  @extend %default-btn;
+  padding: 25px 55px;
+}
+
+.main-section__text {
+  @include fontz('Roboto-Condensed', 400, 16x, normal);
+  color: #fff;
+  margin-top: 55px;
+  display: flex;
+  justify-content: start;
+
+  span {
+    background-color: $primary;
+    height: 2px;
+    width: 20px;
+    display: block;
+    margin: 8px 5px 0 0;
+  }
+}

@@ -1,0 +1,19 @@
+@media screen and (max-width: 767px) {
+  .main-section__title {
+    font-size: 50px;
+  }
+
+  .main-section__body {
+    min-height: 100vh;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main-section__title {
+    font-size: 36px;
+  }
+
+  .main-section__subTitle {
+    font-size: 15px;
+  }
+}

@@ -4,6 +4,7 @@
 @import "./mixins&patterns.scss";
 
 @import 'header.scss';
+@import 'section1.scss';
 
 #root {
   display: flex;
@@ -52,3 +53,4 @@ html.scroll-active {
 
 
 @import './media-q/header-media.scss';
+@import './media-q/section1-media.scss';
