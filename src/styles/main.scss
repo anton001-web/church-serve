@@ -5,6 +5,7 @@
 
 @import 'header.scss';
 @import 'section1.scss';
+@import 'section2.scss';
 
 #root {
   display: flex;
@@ -51,6 +52,10 @@ html.scroll-active {
   }
 }
 
+body {
+  overflow-x: hidden;
+}
 
 @import './media-q/header-media.scss';
 @import './media-q/section1-media.scss';
+@import './media-q/section2-media.scss';
