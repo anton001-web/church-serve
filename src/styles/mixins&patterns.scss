@@ -29,6 +29,12 @@
   border-bottom: 15px solid $primary;
 }
 
+%span-primary {
+  @include fontz('Roboto-Condensed', 400, 14px, normal);
+  color: darken($primary, 30%);
+  text-transform: uppercase;
+}
+
 %default-btn {
   @include fontz('Roboto-Condensed', 400, 16px, normal);
   background: $primary;

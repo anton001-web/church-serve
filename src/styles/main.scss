@@ -10,6 +10,7 @@
 @import 'section4.scss';
 @import 'section5.scss';
 @import 'section6.scss';
+@import 'section7.scss';
 
 #root {
   display: flex;
@@ -67,6 +68,7 @@ body {
 @import './media-q/section4-media.scss';
 @import './media-q/section5-media.scss';
 @import './media-q/section6-media.scss';
+@import './media-q/section7-media.scss';
 
 @media screen and (max-width: 767px) {
   .title {
