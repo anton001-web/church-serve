@@ -1,0 +1,54 @@
+.serve-section {
+  margin-top: $section-margin;
+  background-image: url("../assets/images/serveSecBg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  //min-height: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 200px 20px;
+
+  @media screen and (max-width: 767px) {
+    background-image: url("../assets/images/serveSecBgTablet.png");
+  }
+}
+
+.serve-section__body {
+  gap: 20px;
+  background-color: #fff;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  @extend %bottom-border-primary;
+}
+
+.serve-section__title {
+  max-width: 370px;
+  color: $black;
+  @extend %section-title;
+  text-align: start;
+  margin-bottom: 20px;
+}
+
+.serve-section__text {
+  color: $black;
+  margin-bottom: 20px;
+  @extend %text-default;
+}
+
+.serve-section__btn {
+  @extend %default-btn;
+  width: 170px;
+}
+
+.serve-sec__img-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 70%;
+    object-fit: cover;
+  }
+}
