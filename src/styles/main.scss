@@ -4,8 +4,12 @@
 @import "./mixins&patterns.scss";
 
 @import 'header.scss';
+@import 'card.scss';
 @import 'footer.scss';
+@import 'fullWimg.scss';
+@import 'sermons.scss';
 @import 'section1.scss';
+@import 'about.scss';
 @import 'section2.scss';
 @import 'section3.scss';
 @import 'section4.scss';
@@ -18,11 +22,9 @@
   flex-direction: column;
   height: 100%;
 }
-
 .content {
   flex: 1 0 auto;
 }
-
 .footer {
   flex: 0 0 auto;
 }
@@ -58,6 +60,10 @@ html.scroll-active {
   }
 }
 
+html,body {
+  height: 100%;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -71,6 +77,8 @@ body {
 @import './media-q/section5-media.scss';
 @import './media-q/section6-media.scss';
 @import './media-q/section7-media.scss';
+@import './media-q/about-media.scss';
+@import 'media-q/sermons-media.scss';
 
 @media screen and (max-width: 767px) {
   .title {

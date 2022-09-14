@@ -1,0 +1,37 @@
+.fullW-img-block {
+  position: relative;
+
+  picture {
+    width: 100%;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+  }
+}
+
+.fullW-img-title__group {
+  padding: $padding-default;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.fullW-comp-subTitle {
+  text-align: start;
+  @extend %section-subTitle;
+  color: $black;
+}
+
+.fullW-comp-title {
+  text-align: start;
+  color: $black;
+  @extend %section-title;
+}

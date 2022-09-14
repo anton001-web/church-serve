@@ -43,8 +43,8 @@ const Header = () => {
                                             <span></span>
                                         </div>
                                         <li className="header-list__item" data-mar><Link className='header-link' to=''>home</Link></li>
-                                        <li className="header-list__item" data-mar><Link className='header-link' to=''>about us</Link></li>
-                                        <li className="header-list__item" data-mar><Link className='header-link' to=''>sermon</Link></li>
+                                        <li className="header-list__item" data-mar><Link className='header-link' to='/about-page'>about us</Link></li>
+                                        <li className="header-list__item" data-mar><Link className='header-link' to='/sermons'>sermon</Link></li>
                                         <li className="header-list__item"><Link className='header-link' to=''>blog</Link></li>
                                     </ul>
                                 </div>

@@ -1,0 +1,103 @@
+.card {
+  padding: $padding-default;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: $light-orange;
+}
+
+.card-subTitle {
+  @extend %span-primary;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.card-title {
+  @include fontz('Roboto-Condensed', 400, 24px, normal);
+  color: $black;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.card-text {
+  @extend %text-default;
+  color: #161722;
+  margin-bottom: 20px;
+  opacity: 0.78;
+}
+
+.card-footer {
+  margin: 40px 0px 20px 0px
+}
+
+.card-host {
+  text-transform: capitalize;
+  display: block;
+  @include fontz('Roboto-Condensed', 400, 18px, normal);
+  color: $black;
+}
+
+.card-date {
+  text-transform: capitalize;
+  display: block;
+  @include fontz('Roboto-Condensed', 400, 16px, normal);
+  color: $black;
+}
+
+.card-footer-item {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+
+  img {
+    align-self: start;
+    margin-right: 10px;
+  }
+}
+
+.card-footer-text {
+  color: $black;
+  @include fontz('Roboto-Condensed', 400, 16px, normal);
+
+  span {
+    display: block;
+    margin-bottom: 5px;
+  }
+}
+
+.card-place {
+  margin-top: 20px;
+
+  .card-footer-text {
+    text-transform: capitalize;
+    max-width: 200px;
+  }
+}
+
+.card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.card-header-data {
+  display: flex;
+  flex-direction: column;
+  @include fontz('Roboto-Condensed', 400, 20px, bold);
+  text-transform: uppercase;
+  align-self: end;
+  margin-bottom: 20px;
+
+  span {
+    align-self: end;
+    font-weight: 700;
+  }
+}
+
+.card-header-dataT-group {
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

@@ -25,34 +25,6 @@
   gap: 20px;
 }
 
-.events-list__item {
-  padding: $padding-default;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: $light-orange;
-}
-
-.events-item__subTitle {
-  @extend %span-primary;
-  margin-bottom: 20px;
-  display: block;
-}
-
-.events-item__title {
-  @include fontz('Roboto-Condensed', 400, 24px, normal);
-  color: $black;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-}
-
-.events-item__text {
-  @extend %text-default;
-  color: #161722;
-  margin-bottom: 20px;
-  opacity: 0.78;
-}
-
 .event-date-info {
   text-transform: capitalize;
   display: block;

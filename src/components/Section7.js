@@ -1,4 +1,5 @@
 import React from 'react'
+import {CardComp} from "./CardComp";
 
 const events = [
     {
@@ -42,17 +43,7 @@ const Section7 = () => {
                         <div className='events-list'>
                             {
                                 events.map((eventItm, ind) => (
-                                    <div key={ind} className='events-list__item'>
-                                        <div className='event-text__group'>
-                                            <span className='events-item__subTitle'>{eventItm.subTitle}</span>
-                                            <h3 className='events-item__title'>{eventItm.title}</h3>
-                                            <p className='events-item__text'>{eventItm.text}</p>
-                                        </div>
-                                        <div className='event-date__block'>
-                                            <span className='event-date-info event-host'>By {eventItm.host}</span>
-                                            <span className='event-date-info event-date'>{eventItm.date}</span>
-                                        </div>
-                                    </div>
+                                    <CardComp data={eventItm}/>
                                 ))
                             }
                         </div>

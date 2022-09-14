@@ -1,0 +1,205 @@
+.about-page__body {
+  margin-top: $section-margin;
+  padding: $padding-default;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-page__titles-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-page__subTitle {
+  @extend %section-subTitle;
+}
+
+.about-page__title {
+  @extend %section-title;
+}
+
+.about-page__text {
+  margin-top: 40px;
+  text-align: center;
+  max-width: 800px;
+  @extend %text-default;
+  color: #161722;
+  opacity: 0.78;
+}
+
+.about-page__photoAlbum {
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: $padding-default;
+  align-items: start;
+}
+
+.about-page__photoAlbum-item {
+  width: 100%;
+  object-fit: cover;
+
+  &[data-mini] {
+    transform: scale(0.8);
+  }
+}
+
+.about-page__udr-album-text-group {
+  margin-top: 100px;
+  align-self: center;
+  display: flex;
+  column-gap: 100px;
+}
+
+.udr-text__subTitle {
+  display: block;
+  margin-bottom: 20px;
+  color: $black;
+  text-transform: uppercase;
+  @extend %text-default
+}
+
+.udr-text__title {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  @include fontz('Roboto-Condensed', 700, 40px, normal);
+  color: $black;
+}
+
+.udr-text__text {
+  color: $black;
+  @extend %text-default;
+  text-align: start;
+  max-width: 380px;
+}
+
+.abt-page__benefits-list {
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 50px;
+}
+
+.abt-page__benefits-subTitle {
+  @extend %section-subTitle;
+}
+
+.abt-page__benefits-title {
+  @extend %section-title;
+}
+
+.about-page__benefits-block {
+  margin-top: $section-margin;
+}
+
+.abtP-benefits__item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.abtP-bi-text__group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.abtP-bi-title {
+  margin-bottom: 20px;
+}
+
+.avtP-bi-text {
+  text-align: center;
+  @extend %text-default;
+}
+
+.abtP-bi-img-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &[data-pos='2'] {
+    grid-row: 1;
+  }
+
+  &[data-pos='4'] {
+    grid-row: 1
+  }
+
+  img {
+    width: 90%;
+    object-fit: cover;
+  }
+}
+
+.abtP-bi-title {
+  text-transform: uppercase;
+  color: $black;
+  @include fontz('Roboto-Condensed', 700, 32px, normal);
+}
+
+.avtP-bi-text {
+  max-width: 600px;
+  color: $black;
+  @extend %text-default;
+}
+
+.about-page__team-block {
+  margin-top: $section-margin;
+}
+
+.about-page__team-subTitle {
+  @extend %section-subTitle;
+}
+
+.about-page__team-title {
+  @extend %section-title;
+}
+
+.about-page__team-list {
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: $padding-default;
+}
+
+.team-list__item {
+  padding: 40px $padding-default;
+  background-color: $light-orange;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tm-list__item-img__block {
+  margin-bottom: 20px;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.tm-list__item-title {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: $black;
+  @include fontz('Roboto-Condensed', 700, 24px, normal);
+}
+
+.tm-list__item-post {
+  text-transform: capitalize;
+  @extend %text-default;
+}
+
+.tm-list__item-media__list {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+
+  img[data-mr] {
+    margin-right: 10px;
+  }
+}

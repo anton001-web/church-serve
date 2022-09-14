@@ -1,0 +1,93 @@
+@media screen and (max-width: 996px) {
+  .about-page__photoAlbum-item {
+    transform: scale(1.2);
+
+    &[data-mini] {
+      transform: scale(.9);
+    }
+  }
+  .about-page__team-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about-page__udr-album-text-group {
+    flex-direction: column;
+
+    h2 {
+      font-size: 32px;
+    }
+  }
+
+  .about-page__photoAlbum {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about-page__photoAlbum-item {
+    transform: scale(1);
+    //height: 600px;
+    width: 70%;
+
+    &[data-mini] {
+      transform: scale(1);
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .abtP-benefits__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .abt-page__benefits-list {
+    padding-top: 40px;
+    border-top: 1px solid #000;
+  }
+
+  .avtP-bi-text {
+
+  }
+
+  .abtP-bi-img-block {
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .avtP-bi-text {
+    font-size: 15px;
+  }
+
+  .abtP-bi-title {
+    font-size: 26px;
+  }
+
+  .abtP-bi-text__group {
+    align-items: center;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about-page__team-list {
+    grid-template-columns: 1fr;
+  }
+
+  .about-page__photoAlbum-item {
+    transform: scale(1);
+    width: 100%;
+
+    &[data-mini] {
+      transform: scale(1);
+    }
+  }
+}

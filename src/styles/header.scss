@@ -29,6 +29,7 @@
 }
 
 .header-list__block {
+  z-index: 99999;
   transition: left .4s;
   padding-left: 50px;
 

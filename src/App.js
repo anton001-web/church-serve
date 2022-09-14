@@ -8,12 +8,21 @@ import {
     Route,
     Routes
 } from "react-router-dom";
+import Sermons from "./components/pages/Sermons";
+import About from "./components/pages/About";
 
 const App = () => {
     return (
         <Router>
             <Header />
-            <Main />
+            <div className="content">
+                <Routes>
+                    <Route path='/about-page' element={<About />}/>
+                    <Route path='/sermons' element={<Sermons />}/>
+                    <Route path='/' exact element={<Main />} />
+                    <Route path='*' exact element={<h1 style={{textAlign: 'center', fontSize: '60px', fontFamily: 'Roboto-Condensed'}}>This page does not exist</h1>} />
+                </Routes>
+            </div>
             <Footer />
         </Router>
     )

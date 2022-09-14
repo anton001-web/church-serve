@@ -35,9 +35,7 @@
 }
 
 .join-in__info-subTitle {
-  text-transform: uppercase;
-  @include fontz('Roboto-Condensed', 700, 14px, normal);
-  color: lighten(#A54E2B, 20%);
+  @extend %span-primary;
   margin-bottom: 20px;
   display: block;
 }

@@ -1,0 +1,41 @@
+.sermons-page {
+}
+
+.sermons-page__body {
+}
+
+.sermons-page__main-content {
+  padding: $padding-default;
+}
+
+.sermons-page-sermons-link {
+  @include fontz('Roboto-Condensed', 400, 24px, normal);
+  color: $black;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  text-decoration: none;
+  padding: $padding-default;
+
+  img {
+    margin-left: 20px;
+  }
+}
+
+.sermons-page__events-list__block {
+  margin-top: $section-margin;
+}
+
+.sermons-page__events-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: $padding-default;
+}
+
+.sermons-page__events-list__item {
+  background-color: $light-orange;
+}
+
+.card-header-data {
+
+}

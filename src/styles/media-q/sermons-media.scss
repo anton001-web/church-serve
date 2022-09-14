@@ -1,0 +1,11 @@
+@media screen and (max-width: 996px) {
+  .sermons-page__events-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .sermons-page__events-list {
+    grid-template-columns: 1fr;
+  }
+}
