@@ -10,6 +10,7 @@ import {
 } from "react-router-dom";
 import Sermons from "./components/pages/Sermons";
 import About from "./components/pages/About";
+import Blog from "./components/pages/Blog";
 
 const App = () => {
     return (
@@ -19,6 +20,7 @@ const App = () => {
                 <Routes>
                     <Route path='/about-page' element={<About />}/>
                     <Route path='/sermons' element={<Sermons />}/>
+                    <Route path='/blog' element={<Blog />}/>
                     <Route path='/' exact element={<Main />} />
                     <Route path='*' exact element={<h1 style={{textAlign: 'center', fontSize: '60px', fontFamily: 'Roboto-Condensed'}}>This page does not exist</h1>} />
                 </Routes>

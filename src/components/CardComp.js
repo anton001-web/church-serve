@@ -1,5 +1,3 @@
-import React from 'react'
-
 export const CardComp = ({data}) => {
     return (
         <div className='card'>
@@ -42,3 +40,5 @@ export const CardComp = ({data}) => {
         </div>
     )
 }
+
+import React from 'react'

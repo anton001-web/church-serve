@@ -1,0 +1,34 @@
+@media screen and (max-width: 996px) {
+  .blPage-recent-post__imgBlock {
+    img {
+      height: 400px;
+    }
+  }
+
+  .blpage__posts-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .blpage__posts-list {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-page__recent-post__block {
+    grid-template-columns: 1fr;
+    padding: $padding-default;
+  }
+
+  .blpage-rctPage-title {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .blPage-recent-post__imgBlock {
+    img {
+      height: 300px;
+    }
+  }
+}
