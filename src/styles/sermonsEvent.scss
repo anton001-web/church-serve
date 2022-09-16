@@ -1,0 +1,162 @@
+.sermons-page__event {
+  background-color: $sddPage-bg;
+  height: 100%;
+  padding: $section-margin 0;
+}
+
+.sermons-page__event-body {
+  padding: $padding-default;
+}
+
+.srmn-page__event-info__wrap {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: $padding-default;
+  //column-gap: 40px;
+}
+
+.srmn-page-event__block {
+  display: flex;
+  flex-direction: column;
+}
+
+.srmn-page__event-img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.srmn-page-event__text-group {
+  margin-top: 30px;
+  text-align: start;
+}
+
+.srmn-page__event-subTitle {
+  @extend %span-primary;
+}
+
+.srmn-page__event-title {
+  @extend %section-title;
+  text-align: start;
+  margin-bottom: 20px;
+}
+
+.srmn-page__event-text {
+  @extend %text-default;
+  color: #161722;
+  margin-bottom: 20px;
+  opacity: 0.78;
+}
+
+.srmn-page__event-note {
+  padding: 20px;
+  margin-bottom: 20px;
+  border-left: 3px solid $primary;
+  @extend %text-default;
+  opacity: 0.78;
+  color: $black;
+}
+
+.srmn-page-event__form-block {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+
+.srmn-page-event__form {
+  width: 100%;
+  max-width: 500px;
+  background-color: #fff;
+  padding: $padding-default;
+}
+
+.srmn-page-event__form-title {
+  @include fontz('Roboto-Condensed', 400, 32px, normal);
+  color: #161722;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.srmn-page-event__form-register-date__block {
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.srmn-page-event__form-place {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ev-reg-form-add-info {
+  @extend %text-default;
+  color: $black;
+  text-transform: capitalize;
+
+  img {
+    margin-right: 12px;
+  }
+}
+
+.srmn-page-event__form-item {
+
+}
+
+
+.srmn-page-event__form-item {
+  position: relative;
+}
+
+.srmn-page__input {
+  padding: 15px 0;
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  margin-bottom: 20px;
+  outline: none;
+  @extend %text-default;
+  color: $black;
+  border-bottom: 1px solid #232536;
+}
+
+.srmn-page-label {
+  @extend %text-default;
+  opacity: .78;
+  color: $black;
+  transition: all .4s;
+  position: absolute;
+  left: 0;
+  top: calc(50% - 5px);
+  transform: translate(0%, -50%);
+}
+
+.srmn-page__input:focus+label,
+.srmn-page__input:not(:placeholder-shown)+label {
+  top: 0px;
+}
+
+::-webkit-input-placeholder {color: rgba(0, 0, 0, 0)}
+::-moz-placeholder          {color: rgba(0, 0, 0, 0)}
+:-moz-placeholder           {color: rgba(0, 0, 0, 0)}
+:-ms-input-placeholder      {color: rgba(0, 0, 0, 0)}
+
+.srmn-page-event__form-submit {
+  margin-top: 20px;
+  @extend %default-btn;
+}
+
+.sermons-page__upcoming-events-list__block {
+  margin-top: $section-margin;
+}
+
+.sermons-page-upcoming-srEvents__title {
+  @extend %section-title;
+}
+
+.sermons-page__upcoming-events-list {
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: $padding-default;
+}

@@ -1,0 +1,17 @@
+@media screen and (max-width: 767px) {
+  .contact-page__body {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-page__contacts-block {
+    margin-top: 50px;
+    justify-content: start;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contact-page__form-submit {
+    padding: 12px 30px;
+    font-size: 14px;
+  }
+}

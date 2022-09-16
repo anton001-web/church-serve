@@ -80,6 +80,9 @@
 }
 
 .join-in__info-btn {
+  a {
+    color: #fff;
+  }
   margin-top: 20px;
   @extend %secondary-btn;
   padding: 20px 60px;

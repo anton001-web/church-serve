@@ -5,8 +5,11 @@
 
 @import 'header.scss';
 @import 'card.scss';
+@import 'sermonsEvent.scss';
+@import 'blogPost.scss';
 @import 'blog.scss';
 @import 'footer.scss';
+@import 'contact.scss';
 @import 'fullWimg.scss';
 @import 'sermons.scss';
 @import 'section1.scss';
@@ -17,6 +20,12 @@
 @import 'section5.scss';
 @import 'section6.scss';
 @import 'section7.scss';
+
+//html {
+//  &:focus-within {
+//    scroll-behavior: auto;
+//  }
+//}
 
 #root {
   display: flex;
@@ -69,7 +78,9 @@ body {
   overflow-x: hidden;
 }
 
+
 @import './media-q/header-media.scss';
+@import './media-q/blogPost-media.scss';
 @import './media-q/footer-media.scss';
 @import './media-q/blog-media.scss';
 @import './media-q/section1-media.scss';
@@ -81,6 +92,8 @@ body {
 @import './media-q/section7-media.scss';
 @import './media-q/about-media.scss';
 @import 'media-q/sermons-media.scss';
+@import 'media-q/sermonsEvent-media.scss';
+@import 'media-q/contact-media.scss';
 
 @media screen and (max-width: 767px) {
   .title {

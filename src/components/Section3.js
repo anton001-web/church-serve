@@ -1,4 +1,6 @@
 import React from 'react'
+import {Link} from "react-router-dom";
+import {scrollTop} from "./Header";
 
 const Section3 = () => {
     return (
@@ -11,7 +13,7 @@ const Section3 = () => {
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                     </p>
                     <div className='pray-section__photoalbum-block'>
-                        <button className="pray-section__btn">read more</button>
+                        <button className="pray-section__btn"><Link onClick={scrollTop} to='/about-page'>read more</Link></button>
                         <div className='pray-section__photoalbum-list'>
                             <img src="./assets/images/pray-alb1.png" alt="" data-height/>
                             <img src="./assets/images/pray-alb2.png" alt=""/>

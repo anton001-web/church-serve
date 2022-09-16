@@ -1,4 +1,6 @@
 import React from 'react'
+import {Link} from "react-router-dom";
+import {scrollTop} from "./Header";
 
 const Section5 = () => {
     return (
@@ -22,7 +24,7 @@ const Section5 = () => {
                                     <p className='join-in-timetable-text'>No 233 Main St. New York, <br/> United States</p>
                                 </div>
                             </div>
-                            <button className="join-in__info-btn">register</button>
+                            <button className="join-in__info-btn"><Link onClick={scrollTop} to='/contact-page'>register</Link> </button>
                         </div>
                         <div className='join-in__main-img__block'>
                             <img src="./assets/images/joinSec.png" alt="" className='join-in__img' />

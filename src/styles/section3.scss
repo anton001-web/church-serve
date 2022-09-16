@@ -50,6 +50,9 @@
 
 .pray-section__btn {
   margin-top: 40px;
+  a {
+    color: $black;
+  }
   max-width: 200px;
   @extend %default-btn;
 

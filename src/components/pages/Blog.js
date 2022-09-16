@@ -1,8 +1,12 @@
 import React from 'react'
 import {postsList} from "../../data/blogPageData";
 import {CardComp} from "../CardComp";
+import {Link} from "react-router-dom";
+import {scrollTop} from "../Header";
 
 const Blog = () => {
+
+
     return (
         <section className='blog-page-wrap'>
             <div className='blog-page'>
@@ -29,7 +33,9 @@ const Blog = () => {
                             <div className='blpage__posts-list'>
                                 {
                                     postsList.map((post, ind) => (
-                                        <CardComp data={post} key={ind} />
+                                        <Link to={post.href} onClick={scrollTop}>
+                                            <CardComp data={post} key={ind} />
+                                        </Link>
                                     ))
                                 }
                             </div>

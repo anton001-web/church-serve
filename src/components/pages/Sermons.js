@@ -3,45 +3,8 @@ import Section5 from "../Section5";
 import {Link} from "react-router-dom";
 import {CardComp} from "../CardComp";
 import {FullWscreenHeader} from "../FullWscreenHeader";
-
-const events = [
-    {
-        subTitle: 'upcoming event',
-        title: '100 random acts of kindness',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-        timeFrom: 'Friday 23:39 IST',
-        timeTo: 'Saturday 11:20 ISD',
-        location: 'no 233 main st. new york, united states',
-        isOnlyDate: true
-    },
-    {
-        subTitle: 'Faith is a process, not a destination',
-        title: '100 random acts of kindness',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-        timeFrom: 'Friday 23:39 IST',
-        timeTo: 'Saturday 11:20 ISD',
-        location: 'no 233 main st. new york, united states',
-        isOnlyDate: true
-    },
-    {
-        subTitle: 'upcoming event',
-        title: 'there is nothing impossible',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-        timeFrom: 'Friday 23:39 IST',
-        timeTo: 'Saturday 11:20 ISD',
-        location: 'no 233 main st. new york, united states',
-        isOnlyDate: true
-    },
-    {
-        subTitle: 'upcoming event',
-        title: 'WATCH AND LISTEN TO OUR SERMONS',
-        text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-        timeFrom: 'Friday 23:39 IST',
-        timeTo: 'Saturday 11:20 ISD',
-        location: 'no 233 main st. new york, united states',
-        isOnlyDate: true
-    }
-]
+import {events} from "../../data/sermonsData";
+import {scrollTop} from "../Header";
 
 const Sermons = () => {
     return (
@@ -62,7 +25,9 @@ const Sermons = () => {
                             <div className='sermons-page__events-list'>
                                 {
                                     events.map((event, ind) => (
-                                        <CardComp data={event} key={ind}/>
+                                        <Link to={event.href} onClick={scrollTop}>
+                                            <CardComp data={event} key={ind}/>
+                                        </Link>
                                     ))
                                 }
                             </div>

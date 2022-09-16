@@ -1,5 +1,7 @@
 import React from 'react'
 import {CardComp} from "./CardComp";
+import {Link} from "react-router-dom";
+import {scrollTop} from "./Header";
 
 const events = [
     {
@@ -43,7 +45,9 @@ const Section7 = () => {
                         <div className='events-list'>
                             {
                                 events.map((eventItm, ind) => (
-                                    <CardComp data={eventItm}/>
+                                    <Link onClick={scrollTop} to='/blog' key={ind}>
+                                        <CardComp data={eventItm}/>
+                                    </Link>
                                 ))
                             }
                         </div>

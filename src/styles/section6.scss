@@ -38,6 +38,9 @@
 }
 
 .serve-section__btn {
+  a {
+    color: $black;
+  }
   @extend %default-btn;
   width: 170px;
 }

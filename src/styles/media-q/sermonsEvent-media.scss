@@ -1,0 +1,19 @@
+@media screen and (max-width: 996px) {
+  .srmn-page__event-info__wrap {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .sermons-page__upcoming-events-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .srmn-page__event-info__wrap {
+    grid-template-columns: 1fr;
+  }
+
+  .sermons-page__upcoming-events-list {
+    grid-template-columns: 1fr;
+  }
+}

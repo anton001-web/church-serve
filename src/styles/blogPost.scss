@@ -1,0 +1,105 @@
+.blog-page__post {
+  background-color: $sddPage-bg;
+  padding-top: $section-margin;
+  text-align: center;
+}
+
+.blpage-post__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: $padding-default;
+}
+
+.blpage-post__subTitle {
+  margin-bottom: 20px;
+  display: block;
+  @extend %span-primary;
+}
+
+.blpage-post__title {
+  margin-bottom: 20px;
+  @extend %section-title;
+}
+
+.blpage-post__host {
+  text-transform: capitalize;
+  @extend %text-default;
+}
+
+.blpage-post__mainImg-block {
+  margin-top: 50px;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+    //height: 600px;
+  }
+}
+
+.blpage-news__list {
+  max-width: 800px;
+  margin: $section-margin 0;
+  text-align: start;
+}
+
+.blpage-news-item1__img {
+  width: 100%;
+}
+
+.blpage-news__list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.blpage-news__list-item__title {
+  @include fontz('Roboto-Condensed', 700, 48px, normal);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: $black;
+}
+
+.blpage-news__list-item__text {
+  @extend %text-default;
+  color: $black;
+  margin-bottom: 20px;
+}
+
+.blpage-news__list-item__title2 {
+  @include fontz('Roboto-Condensed', 700, 32px, normal);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: $black;
+}
+
+.blpage-news__list-item__note {
+  margin-bottom: 20px;
+  @extend %text-default;
+  font-size: 22px;
+  color: $black;
+  padding: $padding-default;
+  border-left: 3px solid $primary;
+}
+
+.news-item3__list {
+  margin-bottom: 20px;
+}
+
+
+.blpage-news__list-item__title3 {
+  @include fontz('Roboto-Condensed', 700, 32px, normal);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: $black;
+}
+
+.news-item3__list-item {
+  list-style: disc;
+  @include fontz('Roboto-Condensed', 400, 18px, normal);
+  color: $black;
+  margin: 10px 0px 0px 17px;
+}

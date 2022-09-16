@@ -3,6 +3,10 @@ import {Link} from "react-router-dom";
 import {useDispatch, useSelector} from "react-redux";
 import {toggleBurger} from "../store/actions";
 
+export const scrollTop = () => {
+    window.scrollTo(0, 0)
+}
+
 const Header = () => {
     const dispatch = useDispatch()
     const burgerMenu = React.createRef()
@@ -26,11 +30,17 @@ const Header = () => {
         }
     }, [visibility])
 
+    const webAnnulment = () => {
+        window.scrollTo(0, 0)
+        burgerMenu.current.classList.remove('burger-open__active')
+        document.documentElement.classList.remove('scroll-active')
+    }
+
     return (
         <header className="header">
             <div className='container'>
                 <div className='header-body'>
-                    {/*<div className='header-contet__block'>*/}
+                    {/*<div className='header-content__block'>*/}
                         <div className='header-left__content'>
                             <div className='header-logo__wrap'>
                                 <img src="./assets/images/logo.png" alt=""/>
@@ -38,14 +48,14 @@ const Header = () => {
                             <div className='header-list__block' ref={burgerMenu}>
                                 <div className='header-list__container'>
                                     <ul className="header-list">
-                                        <div className='burger-menu__close' data-mar onClick={handleBurger}>
+                                        <div className='burger-menu__close' data-mar onClick={() => handleBurger()}>
                                             <span data-p></span>
                                             <span></span>
                                         </div>
-                                        <li className="header-list__item" data-mar><Link className='header-link' to=''>home</Link></li>
-                                        <li className="header-list__item" data-mar><Link className='header-link' to='/about-page'>about us</Link></li>
-                                        <li className="header-list__item" data-mar><Link className='header-link' to='/sermons'>sermon</Link></li>
-                                        <li className="header-list__item"><Link className='header-link' to='/blog'>blog</Link></li>
+                                        <li className="header-list__item" data-mar><Link onClick={webAnnulment} className='header-link' to=''>home</Link></li>
+                                        <li className="header-list__item" data-mar><Link onClick={webAnnulment} className='header-link' to='/about-page'>about us</Link></li>
+                                        <li className="header-list__item" data-mar><Link onClick={webAnnulment} className='header-link' to='/sermons'>sermon</Link></li>
+                                        <li className="header-list__item"><Link onClick={webAnnulment} className='header-link' to='/blog'>blog</Link></li>
                                     </ul>
                                 </div>
                             </div>
@@ -53,7 +63,7 @@ const Header = () => {
                     {/*</div>*/}
                     <div className='header-ri'>
                         <button className='header-btn'>
-                            contact us
+                            <Link to='/contact-page' onClick={scrollTop}>contact us</Link>
                         </button>
                     </div>
                     <div className='hidden-burger__toggle-block'>

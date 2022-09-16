@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link} from "react-router-dom";
+import {scrollTop} from "./Header";
 
 const Footer = () => {
     return (
@@ -22,10 +23,10 @@ const Footer = () => {
                     <div className="footer-list__block">
                         <div className='footer-list'>
                             <li className='footer-list__item footer-list__title'>Quicklinks</li>
-                            <li className='footer-list__item'><Link className='footer-link' to=''>about us</Link></li>
-                            <li className='footer-list__item'><Link className='footer-link' to=''>sermons</Link></li>
-                            <li className='footer-list__item'><Link className='footer-link' to=''>events</Link></li>
-                            <li className='footer-list__item'><Link className='footer-link' to=''>blog</Link></li>
+                            <li className='footer-list__item'><Link onClick={scrollTop} className='footer-link' to='/'>home</Link></li>
+                            <li className='footer-list__item'><Link onClick={scrollTop} className='footer-link' to='/about-page'>about us</Link></li>
+                            <li className='footer-list__item'><Link onClick={scrollTop} className='footer-link' to='/sermons'>sermons</Link></li>
+                            <li className='footer-list__item'><Link onClick={scrollTop} className='footer-link' to='/blog'>blog</Link></li>
                         </div>
                         <div className='footer-media-list-block'>
                             <li className='footer-list__title'>Connect</li>
